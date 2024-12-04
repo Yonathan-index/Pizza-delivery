@@ -1,0 +1,100 @@
+body {
+    background-color: #F29F58;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1B1833;
+    font-family: "Protest Revolution";
+    
+
+}
+
+  
+
+.ingrdientes_extra {
+    opacity: 0;
+    transition: all .5s;
+}
+
+#extra:checked ~ .ingrdientes_extra {
+    opacity: 1;
+}
+
+label{
+    padding: 0 1rem;
+    height: 1rem;
+    gap: 1rem;
+}
+
+#simple {
+    display: flex;
+    margin: auto;
+}
+
+.file:hover {
+    background-color: rgb(187, 114, 225);
+    box-shadow: 0 0 115px rgba(0, 0, 0, .5);
+}
+
+#file{
+    display: none;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;    
+    padding: 1rem;
+    width: 100%;
+    
+    
+
+}
+
+#size{
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+    background-color: white;
+    margin: auto;
+    height: 2rem;
+    margin-bottom: 10%;
+
+}
+
+
+#btn-container{
+    padding: 2rem;
+}
+
+#enviar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.6rem;
+    width: 60%;
+    border: #1B1833;
+    border-radius: 0.35rem;
+    background-color: #AB4459;
+    cursor: pointer;
+    margin: auto;
+}
+
+#enviar:hover {
+    background-color: #83293b;
+    transition: all 0.5s ease-in;
+}
+
+@media (min-width: 750px) {
+    #form{
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    label{
+        margin: 1rem;
+        
+    }
+}
